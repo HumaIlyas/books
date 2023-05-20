@@ -9,23 +9,7 @@ body {
     overflow: hidden;
 }
 
-/* popup message */
-.popup-message {
-    width: 40%;
-    box-sizing: border-box;
-    border-radius: 50%;
-    border-color: rgb(174, 166, 246);
-    background-color: #c9e6f4;
-    color: #36070c;
-    margin: 5px auto;
-    font-size: 100%;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 50px;
-    position: relative;
-}
-
+/* Comments sections and count of comments */
 .color {
     color: rgb(109, 10, 10);
 }
@@ -82,4 +66,21 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #eb7979;
+}
+
+/* popup message */
+.popup-message {
+    width: 40%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-color: rgb(174, 166, 246);
+    background-color: #c9e6f4;
+    color: #36070c;
+    margin: 5px auto;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 50px;
+    position: relative;
 }
