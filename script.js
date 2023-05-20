@@ -9,6 +9,7 @@ let comments = document.getElementById('comment-box');
 
 // array to store the comments
 let comments_arr = [];
+let comment_number= 0;
 
 // to generate html list based on comments array
 let display_comments = () => {
@@ -39,6 +40,8 @@ submit.onclick = function(event){
       document.querySelector(".popup-message").innerHTML = 'Your comment has been submitted';
       // re-genrate the comment html list
       display_comments();
+      comment_number++;
+      document.getElementById("comment_number").innerHTML = comment_number;
       // reset the textArea content 
       resetTextArea();
     }
