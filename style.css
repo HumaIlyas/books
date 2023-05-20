@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@500&family=Oswald:wght@400&display=swap");
+
+/* body */
+body {
+    background-color: #fcfafa;
+    font-family: lato, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+/* popup message */
+.popup-message {
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #c9e6f4;
+    color: #36070c;
+    margin: 5px auto;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 50px;
+    position: relative;
+}
+
+button {
+    border: none;
+}
