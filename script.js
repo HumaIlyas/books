@@ -1,17 +1,17 @@
-const field = document.querySelector('textarea');
-const backUp = field.getAttribute('placeholder')
-const btn = document.querySelector('.btn');
-const clear = document.getElementById('clear')
-const submit = document.querySelector('#submit')
+let field = document.querySelector('textarea');
+let backUp = field.getAttribute('placeholder')
+let btn = document.querySelector('.btn');
+let reset = document.getElementById('reset')
+let submit = document.querySelector('#submit')
 
 // const comments = document.querySelector('#comment-box')
-const comments = document.getElementById('comment-box');
+let comments = document.getElementById('comment-box');
 
 // array to store the comments
-const comments_arr = [];
+let comments_arr = [];
 
 // to generate html list based on comments array
-const display_comments = () => {
+let display_comments = () => {
   let list = '<ul>';
    comments_arr.forEach(comment => {
     list += `<li>${comment}</li>`;
@@ -20,7 +20,7 @@ const display_comments = () => {
   comments.innerHTML = list;
 }
 
-clear.onclick = function(event){
+reset.onclick = function(event){
   event.preventDefault();
 
   // reset the array  
@@ -31,7 +31,7 @@ clear.onclick = function(event){
 
 submit.onclick = function(event){
     event.preventDefault();
-    const content = field.value;
+    let content = field.value;
     if(content.length > 0){ 
       // if there is content
       // add the comment to the array
