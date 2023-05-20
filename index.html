@@ -14,29 +14,26 @@
 
 <body>
 
-    <div class="container">
-        <h2>Leave a comment</h2>
+    <div>
+        <h2 class="color">Leave a comment</h2>
         <form>
            <textarea id="" placeholder="Add Your Comment" value=" "></textarea>
            <div class="btn">
-               <button id="submit" type="submit">Submit</button>
-               <button id="reset">Reset</button>
-           </div> 
+            <input id="submit" type="submit" value="Submit">
+           </div>
         </form>
     </div>
 
-    <!-- number of comments -->
-    <div class="number">
-        <p class="commentNumber"><i class="fa fa-comments"></i> <span id="comment_number">0</span></p>
-    </div>
-
-    <!-- Comments -->
+    <!-- Comments sections and count of comments -->
     <div class="comments">
-        <h2>Comments
-            <button><i class="fa fa-comments"></i></button>
-        </h2>
+        <div>
+            <h3 class="commentCount">Comments
+                <button><i class="fa fa-comments"></i></button> <span id="comment_count">0</span>
+            </h3>
+        </div>
         <div id="comment-box"></div>
     </div>
+    
 
     <!-- final popup message -->
     <div class="popup-message">
