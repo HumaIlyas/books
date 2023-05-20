@@ -32,6 +32,8 @@ textarea:hover {
 
 #comment-box {
     display: block;
+    line-height: 30px;
+
 }
 
 ul {
