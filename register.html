@@ -28,11 +28,11 @@
                     <a href="contact.html">Contact Us</a>
                 </li>
                 <li>
-                    <a href="login.html">Login</a>
+                  <a href="login.html">Login</a>
                 </li>
                 <li>
-                    <a href="register.html">Register</a>
-                </li>
+                    <a href="register.html" class="active">Register</a>
+                  </li>
                 <li>
                     <a href="comment.html">Comment</a>
                 </li>
@@ -40,26 +40,33 @@
                     <a href="gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
             </ul>
         </nav>
 
     </header>
 
-    <!-- hero image -->
-    <section id="hero-outer">
+    <!-- Login form-->
+    <section id="form">
 
-        <div id="hero-image"></div>
+      <form class="contactus-form" method="POST" action="login.html">
+          <label for="fname" class="bold">First Name</label>
+          <input id="fname" class="input-text" type="text" name="first_name" placeholder="First Name" required>
+          <label for="lname" class="bold">Last Name</label>
+          <input id="lname" class="input-text" type="text" name="last_name" placeholder="Last Name" required>
+          <label for="email" class="bold">Email Address</label>
+          <input id="email" class="input-text" type="email" name="email_address" placeholder="E-mail" required>
+          <div>
+              <button type="submit"><strong>Register</strong></button>
+              <button type="reset"><strong>Reset</strong></button>
+          </div>
+          <div>
+          <h3><a href="login.html">Login</a> if you have already an account</h3>
+          </div>
+      </form>
 
-        <!-- cover on home page -->
-        <div id="cover-text">
-            <h2>Yoga for body & mind self-improvement</h2>
-            <h3>Delft body & mind center</h3>
-        </div>
-
-    </section>
-
+  </section>
     <!-- footer -->
     <footer>
         <ul class="social-networks">
@@ -79,10 +86,10 @@
     </footer>
     
 
+    <script src="login.js"></script>
+
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/6740ff33ae.js" crossorigin="anonymous"></script>
 
-
 </body>
-
 </html>

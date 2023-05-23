@@ -28,6 +28,13 @@
                     <a href="contact.html">Contact Us</a>
                 </li>
                 <li>
+                  <a href="login.html" class="active">Login</a>
+                </li>
+                <li>
+                  <a href="register.html">Register</a>
+                </li>
+                <li>
+                <li>
                     <a href="comment.html">Comment</a>
                 </li>
                 <li>
@@ -37,62 +44,30 @@
                     <a href="index.html">Home</a>
                 </li>
             </ul>
-            <button class="button" id="form-open">Login</button>
         </nav>
 
     </header>
-    <!-- Home -->
-    <section class="home">
-      <div class="form_container">
-        <i class="uil uil-times form_close"></i>
-        <!-- Login From -->
-        <div class="form login_form">
-          <form action="#">
-            <h2>Login</h2>
-            <div class="input_box">
-              <input type="email" placeholder="Enter your email" required />
-              <i class="uil uil-envelope-alt email"></i>
-            </div>
-            <div class="input_box">
-              <input type="password" placeholder="Enter your password" required />
-              <i class="uil uil-lock password"></i>
-              <i class="uil uil-eye-slash pw_hide"></i>
-            </div>
-            <div class="option_field">
-              <span class="checkbox">
-                <input type="checkbox" id="check" />
-                <label for="check">Remember me</label>
-              </span>
-              <a href="#" class="forgot_pw">Forgot password?</a>
-            </div>
-            <button class="button">Login Now</button>
-            <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
-          </form>
-        </div>
-        <!-- Signup From -->
-        <div class="form signup_form">
-          <form action="#">
-            <h2>Signup</h2>
-            <div class="input_box">
-              <input type="email" placeholder="Enter your email" required />
-              <i class="uil uil-envelope-alt email"></i>
-            </div>
-            <div class="input_box">
-              <input type="password" placeholder="Create password" required />
-              <i class="uil uil-lock password"></i>
-              <i class="uil uil-eye-slash pw_hide"></i>
-            </div>
-            <div class="input_box">
-              <input type="password" placeholder="Confirm password" required />
-              <i class="uil uil-lock password"></i>
-              <i class="uil uil-eye-slash pw_hide"></i>
-            </div>
-            <button class="button">Signup Now</button>
-            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
-          </form>
-        </div>
-      </div>
-    </section>
+
+    <!-- Login form-->
+    <section id="form">
+
+      <form class="contactus-form" method="POST" action="login.html">
+          <label for="fname" class="bold">First Name</label>
+          <input id="fname" class="input-text" type="text" name="first_name" placeholder="First Name" required>
+          <label for="lname" class="bold">Last Name</label>
+          <input id="lname" class="input-text" type="text" name="last_name" placeholder="Last Name" required>
+          <label for="email" class="bold">Email Address</label>
+          <input id="email" class="input-text" type="email" name="email_address" placeholder="E-mail" required>
+          <div>
+              <button type="submit"><strong>Login</strong></button>
+              <button type="reset"><strong>Reset</strong></button>
+          </div>
+          <div>
+          <h4><a href="register.html">Register</a> first if you don't have an account</h4>
+          </div>
+      </form>
+
+  </section>
     <!-- footer -->
     <footer>
         <ul class="social-networks">
@@ -112,7 +87,7 @@
     </footer>
     
 
-    <script src="script.js"></script>
+    <script src="login.js"></script>
 
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/6740ff33ae.js" crossorigin="anonymous"></script>
