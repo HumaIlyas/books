@@ -25,10 +25,10 @@
         <nav id="menu">
             <ul>
                 <li>
-                    <a href="contact.html" class="active">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
                 </li>
                 <li>
-                    <a href="comment.html">Comment</a>
+                    <a href="comment.html"  class="active">Comment</a>
                 </li>
                 <li>
                     <a href="gallery.html">Gallery</a>
@@ -48,59 +48,36 @@
 
         <!-- contact details -->
         <div id="contact-text">
-            <h2>Get in touch!</h2>
-
-            <div>
-                <span class="bold">Phone:</span>
-                <span>+31 15 218 3642</span>
-            </div>
-
-            <div>
-                <span class="bold">Email:</span>
-                <span class="lowercase">email@delftbandmcenter.com</span>
-            </div>
-
-            <h3>Address</h3>
-            <p>Delft Body & Mind Center<br>Delftselaan 15<br>Delft, The Netherlands</p>
+            <h4>You can leave a comment to share your experience about the Yoga!</h4>
         </div>
     
     </section>
 
-    <!-- contact form -->
-    <section id="form">
-
-        <form class="contactus-form" action="submission.html" method="get">
-
-            <h2>Let's plan body & mind self-improvement! <i class="fa-solid fa-brain"></i></h2>
-            <label for="fname" class="bold">First Name</label>
-            <input id="fname" class="input-text" type="text" name="first_name" placeholder="First Name" required>
-            <label for="lname" class="bold">Last Name</label>
-            <input id="lname" class="input-text" type="text" name="last_name" placeholder="Last Name" required>
-            <label for="email" class="bold">Email Address</label>
-            <input id="email" class="input-text" type="email" name="email_address" placeholder="E-mail" required>
-            <label class="bold">Select Lesson</label>
-
-            <div class="input-radio">
-                <input id="hot-yoga" type="radio" name="yoga_preference" value="hot-yoga" required>
-                <label for="hot-yoga">Hot Yoga</label><br>
-                <input id="slow-flow-meditation" type="radio" name="yoga_preference" value="slow-flow-meditation">
-                <label for="slow-flow-meditation">Slow Flow & Meditation</label><br>
-                <input id="yin" type="radio" name="yoga_preference" value="yin">
-                <label for="yin">Yin (Not heated)</label><br>
+    <section>
+        <div>
+            <form>
+            <textarea id="" placeholder="Add Your Comment" value=" "></textarea>
+            <div class="btn">
+                <input class="submit" id="submit" type="submit" value="Submit">
             </div>
+            </form>
+        </div>
 
+        <!-- Comments sections and count of comments -->
+        <div class="comments">
             <div>
-                <label for="message" class="bold">Message</label>
-                <textarea id="message" class="message" name="subject" placeholder="Write message here..." required></textarea>
+                <h3 class="commentCount">Comments
+                    <button><i class="fa fa-comments"></i></button> <span id="comment_count">0</span>
+                </h3>
             </div>
+            <div id="comment-box"></div>
+        </div>
+    
 
-            <div>
-                <button type="submit"><strong>Send</strong></button>
-                <button type="reset"><strong>Reset</strong></button>
-            </div>
-
-        </form>
-
+        <!-- final popup message -->
+        <div class="popup-message">
+            <p></p>
+        </div>
     </section>
 
     <!-- footer -->
@@ -121,8 +98,11 @@
         </ul>
     </footer>
 
+    <script src="script.js"></script>
+
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/6740ff33ae.js" crossorigin="anonymous"></script>
+
 
 </body>
 

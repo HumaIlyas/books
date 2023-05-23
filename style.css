@@ -64,6 +64,92 @@ h1, h2, h3 {
     border-bottom: 1px solid rgb(30, 27, 27);
 }
 
+/* home page */
+/* hero image on home page */
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.jpg') no-repeat center center;
+
+    /* animates zoom effect on hero image */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2.2);
+    }
+}
+
+/* cover on home page */
+#cover-text {
+    font-size: 100%;
+    font-family: Oswald, sans-serif;
+    line-height: 35px;
+    text-transform: capitalize;
+    text-align: center;
+    width: 300px;
+    height: 120px;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: rgba(239, 200, 200, 0.8);
+    bottom: 50px;
+    right: 150px;
+    position: absolute;
+}
+
+#cover-text h2, h3 {
+    color: rgb(109, 10, 10);
+}
+
+/* footer */
+footer {
+    margin-top: 50px;
+    height: 75px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 150%;
+    margin: 2%;
+    padding: 2%;
+    color: rgb(109, 10, 10);
+}
+
+/* gallery page */
+/* images on gallery page */
+#images {
+    clear: both;
+    column-count: 3;
+    column-gap: 5px;
+    padding-bottom: 5px;
+}
+
+#images > img {
+    width: 100%;
+}
+
+/* Comments page */
 /* Comments sections and count of comments */
 .color {
     color: rgb(109, 10, 10);
@@ -111,13 +197,14 @@ button {
     border-radius: 50%;
 }
 
-input[type=submit] {
+.submit {
     box-sizing: border-box;
-    border-radius: 5%;
+    border-radius: 50px;
     border-color: rgb(109, 10, 10);
     background-color: #f69e9e;
     color: rgb(109, 10, 10);
     margin: 5px auto;
+    padding: 10px 25px;
     font-size: 100%;
     font-weight: bold;
     text-align: center;
@@ -125,7 +212,7 @@ input[type=submit] {
     line-height: 30px;
 }
 
-input[type=submit]:hover {
+.submit:hover {
     background-color: #eb7979;
 }
 
@@ -144,40 +231,6 @@ input[type=submit]:hover {
     letter-spacing: 1px;
     line-height: 50px;
     position: relative;
-}
-
-/* footer */
-footer {
-    margin-top: 50px;
-    height: 75px;
-}
-
-.social-networks {
-    text-align: center;
-}
-
-.social-networks > li {
-    display: inline;
-}
-
-.social-networks i {
-    font-size: 150%;
-    margin: 2%;
-    padding: 2%;
-    color: rgb(109, 10, 10);
-}
-
-/* gallery page */
-/* images on gallery page */
-#images {
-    clear: both;
-    column-count: 3;
-    column-gap: 5px;
-    padding-bottom: 5px;
-}
-
-#images > img {
-    width: 100%;
 }
 
 /* contact us page */
