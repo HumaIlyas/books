@@ -1,7 +1,6 @@
 // comment page
 let field = document.querySelector('textarea');
 let backUp = field.getAttribute('placeholder');
-let btn = document.querySelector('.btn');
 let submit = document.querySelector('#submit');
 
 // const comments = document.querySelector('#comment-box')

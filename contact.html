@@ -78,28 +78,22 @@
             <input id="lname" class="input-text" type="text" name="last_name" placeholder="Last Name" required>
             <label for="email" class="bold">Email Address</label>
             <input id="email" class="input-text" type="email" name="email_address" placeholder="E-mail" required>
-            <label class="bold">Select Lesson</label>
-
-            <div class="input-radio">
-                <input id="hot-yoga" type="radio" name="yoga_preference" value="hot-yoga" required>
-                <label for="hot-yoga">Hot Yoga</label><br>
-                <input id="slow-flow-meditation" type="radio" name="yoga_preference" value="slow-flow-meditation">
-                <label for="slow-flow-meditation">Slow Flow & Meditation</label><br>
-                <input id="yin" type="radio" name="yoga_preference" value="yin">
-                <label for="yin">Yin (Not heated)</label><br>
-            </div>
 
             <div>
                 <label for="message" class="bold">Message</label>
                 <textarea id="message" class="message" name="subject" placeholder="Write message here..." required></textarea>
             </div>
 
-            <div>
-                <button type="submit"><strong>Send</strong></button>
-                <button type="reset"><strong>Reset</strong></button>
+            <!-- final popup message -->
+            <div id="popup-message">
+                <p></p>
             </div>
 
+            <div>
+                <input class="submit" id="submit" type="submit" value="Submit">
+            </div>
         </form>
+        
 
     </section>
 
@@ -120,6 +114,8 @@
             </li>
         </ul>
     </footer>
+
+    <script src="submission.js"></script>
 
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/6740ff33ae.js" crossorigin="anonymous"></script>

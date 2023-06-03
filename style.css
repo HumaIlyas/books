@@ -10,7 +10,6 @@
 body {
     background-color: #fcfafa;
     font-family: lato, sans-serif;
-    text-align: center;
     font-weight: 300;
     color: rgb(30, 27, 27);
     overflow-x: hidden;
@@ -160,8 +159,8 @@ textarea {
     color: rgb(109, 10, 10);
     height: 100px;
     width: 30%;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    display: block;
+    margin: 20px auto;
     padding: 10px;
     border: 1px solid rgb(246, 224, 224);
     border-radius: 2px;
@@ -178,7 +177,8 @@ textarea:hover {
     background-color: rgb(247, 238, 238);
     color: rgb(109, 10, 10);
     width: 40%;
-    margin-left: 430px;
+    display: block;
+    margin: 10px auto;
 }
 
 ul {
@@ -188,6 +188,10 @@ ul {
 .commentCount {
     padding: 2px 15px 2px 15px;
     color: #722635;
+}
+
+.comments {
+    text-align: center;
 }
 
 button {
@@ -203,7 +207,8 @@ button {
     border-color: rgb(109, 10, 10);
     background-color: #f69e9e;
     color: rgb(109, 10, 10);
-    margin: 5px auto;
+    display: block;
+    margin: 10px auto;
     padding: 10px 25px;
     font-size: 100%;
     font-weight: bold;
@@ -218,19 +223,19 @@ button {
 
 /* popup message */
 .popup-message {
-    width: 40%;
+    width: 50%;
     box-sizing: border-box;
-    border-radius: 50%;
+    border-radius: 2px;
     border-color: rgb(174, 166, 246);
     background-color: #c9e6f4;
     color: #36070c;
-    margin: 5px auto;
+    display: block;
+    margin: 10px auto;
     font-size: 100%;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
     line-height: 50px;
-    position: relative;
 }
 
 /* contact us page */
@@ -444,4 +449,21 @@ button[type=reset] {
 
 #submission-text h3 {
     text-transform: none;
+}
+
+
+/* popup message */
+#popup-message {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border-color: rgb(174, 166, 246);
+    background-color: #c9e6f4;
+    color: #36070c;
+    display: block;
+    margin: 10px auto;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
 }
